@@ -26,4 +26,4 @@ urlpatterns = [
     url(r'^personal_history/', TemplateView.as_view(template_name='personalHistory.html'), name='personalHistory'),
     url(r'^contact_me/', TemplateView.as_view(template_name='contactMe.html'), name="contactMe"),
 
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
