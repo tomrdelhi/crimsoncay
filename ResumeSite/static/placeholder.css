@@ -1,0 +1,22 @@
+.vcenter{
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
+.navbar-btn {
+   border-color: #052b77 !important;
+   text-transform: uppercase !important;
+   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+   font-weight: 700;
+   color: #e0e2e5 !important;
+   background-color: #052b77 !important;
+
+   padding: 8px 10px !important;
+}
+
+.btn-default{
+	background-color: : #052b77 !important;
+	border-color: #052b77 !important;
+	color: #052b77;
+}

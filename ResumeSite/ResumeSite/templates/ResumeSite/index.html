@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Thomas Robinson</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' href="static/placeholder.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="{% url 'index' %}">Thomas Robinson</a>
+          <ul class = "nav navbar-nav">
+          <li><a href="{% url 'resume' %}">Resume</a></li>
+          <li><a href="{% url 'codeSamples' %}">Samples</a></li>
+          <li><a href="{% url 'courseList' %}">Courses</a></li>
+          <li><a href="{% url 'personalHistory' %}">History</a></li>
+          <li><a href="{% url 'contactMe' %}">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h1>Welcome!</h1>
+            <p>Have I recently applied to a position at your company? Would you like to know more about me? <br> You'll find everything you need here, including work experience, coursework, and code samples.</p>
+          </div>
+          <div class = "col-md-2 vcenter">
+            <img src="static/headshot.jpg" class = "img-circle" alt="Thomas Robinson" height = "240" width = "200"/>
+          </div>
+        <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-3">
+          <h2>Resume</h2>
+          <p>See an online version of my CV, or download it in PDF form.</p>
+          <p><a class="btn btn-default" href="{% url 'resume' %}" role="button">More &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <h2>Code Samples</h2>
+          <p>Check out some of my past work. Examples include code in Python, Java, C and Racket with applications from factorization to trading card decks. Also available is the source code of this very website.</p>
+          <p><a class="btn btn-default" href="{% url 'codeSamples' %}" role="button">More &raquo;</a></p>
+       </div>
+        <div class="col-md-3">
+          <h2>Course List</h2>
+          <p>Get a better idea of my education through a full course list. </p>
+          <p><a class="btn btn-default" href="{% url 'courseList' %}" role="button">More &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <h2>Personal History</h2>
+          <p>There's more to an employee than just his or her technical expertise, find out a little about my history and hobbies.</p>
+          <p><a class="btn btn-default" href="{% url 'personalHistory' %}" role="button">More &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+    </div> <!-- /container -->
+
+  </body>
+</html>

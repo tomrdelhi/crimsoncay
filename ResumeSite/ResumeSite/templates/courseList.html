@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    
+    <title>Thomas Robinson - Courses</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' href="static/placeholder.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	</head>
+	
+
+	<body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="{% url 'index' %}">Thomas Robinson</a>
+          <ul class = "nav navbar-nav">
+          <li><a href="{% url 'resume' %}">Resume</a></li>
+          <li><a href="{% url 'codeSamples' %}">Samples</a></li>
+          <li><a href="{% url 'courseList' %}">Courses</a></li>
+          <li><a href="{% url 'personalHistory' %}">History</a></li>
+          <li><a href="{% url 'contactMe' %}">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row">
+    	<div class="col-lg-4">
+    		<h2 style="text-align : center;">Computer Science</h2>
+    		<ul>
+    			<li>CSC148: Introduction to Computer Science</li>
+    			<li>CSC165: Mathematical Expressions and Reasoning for Computer Science</li>
+    			<li>CSC207: Introduction to Software Design</li>
+    			<li>CSC236: Introduction to the Theory of Computation</li>
+    			<li>STA247: Probability with Computer Applications</li>
+    			<li>CSC209: Software Tools and System Programming</li>
+    			<li>CSC258: Computer Organization and Hardware</li>
+    			<li>CSC263: Data Structures and Analysis</li>
+    			<li>CSC301: Introduction to Software Engineering</li>
+    			<li>CSC318: Interaction and Computer Media</li>
+    			<li>CSC369: Introduction to Operating Systems</li>
+    			<li>CSC384: Introduction to Artificial Intelligence</li>
+    			<li>CSC309: Programming on the Web</li>
+    			<li>CSC321: Introduction to Neural Networks</li>
+    			<li>CSC343: Introduction to Databases</li>
+    			<li>CSC373: Algorithm Design and Analysis</li>
+    			<li>CSC300: Computers and Society</li>
+    			<li>CSC324: Programming Languages and Functional Programming</li>
+    			<li>CSC320: Introduction to Computer Vision</li>
+    			<li>CSC401: Natural Language Computation</li>
+    			<li>CSC410: Software Testing and Verification</li>
+    			<li>CSC454: The Business of Software</li>
+    			<li>CSC490: Capstone Design Project</li>
+
+    		</ul>
+    	</div>
+    	<div class="col-lg-4">
+    		<h2 style="text-align : center;">Mathematics</h2>
+    		<ul>
+    			<li>MAT135: Calculus 1A</li>
+    			<li>MAT136: Calculus 1B</li>
+    			<li>MAT223: Linear Algebra 1</li>
+    			<li>Mat235: Calculus 2</li>
+    			<li>MAT224: Linear Algebra 2</li>
+    			<li>HPS390: The History of Math Pre 1700</li>
+    			<li>HPS391: The History of Math Post 1700</li>
+    		</ul>    		
+    	</div>
+    	<div class="col-lg-4">
+    		<h2 style="text-align : center;">Other</h2>
+    		<ul>
+    			<li>NMC101: The Land of the Pharaohs</li>
+    			<li>PHY151: Foundations of Physics 1</li>
+    			<li>AST121: The Origins and Evolution of the Universe</li>
+    			<li>AST251: Life on Other Worlds</li>
+    			<li>PHY152: Foundations of Physics 2</li>
+    			<li>VIC109: Innovators and their Ideas</li>
+    			<li>CLA204: Introduction to Classical Mythology</li>
+    			<li>ENG237: Science Fiction</li>
+    			<li>RLG232: Religion and Film</li>
+    		</ul>    		
+    	</div>    	
+    </div>
+	</body>
+
+
+</html>
