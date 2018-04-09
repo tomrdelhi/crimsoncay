@@ -1,8 +1,8 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-	<head>	
-	<meta charset="utf-8">
+  <head>  
+  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -11,31 +11,28 @@
     <link rel="icon" href="../../favicon.ico">
 
     <style>
-      .body {
-      background-position: center top;
-      background-repeat:no-repeat;
-      background-color: black;
+    body{
+        position: relative;
+        color: black;
+        background-color: black;
     }
     .row{
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      color: black;
       background-color: black;
     }
     .CH1{
       border-right-style: solid;
-      border-right-color: white;
+      border-right-color: black;
       text-align: center;
       font-family: serif;
-      color: white;
-      background-color: black;
     }
     .CH2{
       text-align: center;
       font-family: serif;
-      color: white;
-      background-color: black;
     }
 
     </style>
@@ -47,10 +44,10 @@
     <link rel='stylesheet' href="static/contactMe.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  	</head>
-	
+    </head>
+  
 
-	<body>
+  <body>
     <!-- NavBar -->
     <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container-fluid">
@@ -66,14 +63,16 @@
         </div>
       </div>
     </nav>
-    <div class="row">
-      <div class="col-lg-6 CH1">
-        <h2 class>By Phone</h2>
-        <h2 id="phoneNumber">Crimson Cays Phone Number TODO</h2>
-      </div>
-      <div class="col-lg-6 CH2">
-        <h2>By Email</h2>
-        <h2 id="emailAddress">Crimson Cays Email TODO</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 CH1">
+          <h2 class>By Phone</h2>
+          <h2 id="phoneNumber">Crimson Cays Phone Number TODO</h2>
+        </div>
+        <div class="col-lg-6 CH2">
+          <h2>By Email</h2>
+          <h2 id="emailAddress">Crimson Cays Email TODO</h2>
+        </div>
       </div>
     </div>
   </body>
