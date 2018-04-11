@@ -25,5 +25,5 @@ urlpatterns = [
     url(r'^course_list/', TemplateView.as_view(template_name='courseList.html'), name='courseList'),
     url(r'^personal_history/', TemplateView.as_view(template_name='personalHistory.html'), name='personalHistory'),
     url(r'^contact_me/', TemplateView.as_view(template_name='contactMe.html'), name="contactMe"),
-
+    url(r'^wakemydyno/', TemplateView.as_view(template_name='wakemydyno.txt'), name="wakemydyno"),
 ]
