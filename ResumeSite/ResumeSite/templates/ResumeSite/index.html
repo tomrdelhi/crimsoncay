@@ -31,9 +31,19 @@
 
     <script>
     var bloggerPosts = new XMLHttpRequest();
+
     bloggerPosts.open("GET", "https://www.googleapis.com/blogger/v3/blogs/5944405497733556827/posts?key=AIzaSyCxUdrEisJhIr0QgtqNgHqEjpfHpEO8BEc", true);
+    bloggerPosts.responseType = 'json';
+    bloggerPosts.onload = function() {
+      console.log(bloggerPosts.response);
+    };
     bloggerPosts.send();
+    
     console.log(bloggerPosts);
+    
+    //console.log(obj);
+    //console.log(bloggerPosts.response);
+    
     </script>
   </head>
   <body>
