@@ -29,17 +29,37 @@
     }
     </style>
 
+    <!-- TODO: MOVE OUT OF THIS FILE -->
     <script>
+    
     var bloggerPosts = new XMLHttpRequest();
 
+    
     bloggerPosts.open("GET", "https://www.googleapis.com/blogger/v3/blogs/5944405497733556827/posts?key=AIzaSyCxUdrEisJhIr0QgtqNgHqEjpfHpEO8BEc", true);
     bloggerPosts.responseType = 'json';
-    bloggerPosts.onload = function() {
-      console.log(bloggerPosts.response);
+    //.onload is because GET was failing due to javascript async nonsense
+    bloggerPosts.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var section = document.querySelector('section');
+        console.log(bloggerPosts.response);
+        console.log(bloggerPosts.response.items[1].content);
+
+
+        for(let o of bloggerPosts.response.items){
+          var header = document.createElement('h1');
+          var paragraph = document.createElement('p');
+          header.style.color - "white";
+          header.textContent = o.title;
+          paragraph.style.color = "white";
+          paragraph.textContent = o.content;
+          section.appendChild(header);
+          section.appendChild(paragraph);
+        };
+      };
+
     };
     bloggerPosts.send();
     
-    console.log(bloggerPosts);
     
     //console.log(obj);
     //console.log(bloggerPosts.response);
@@ -61,6 +81,9 @@
         </div>
       </div>
     </nav>
+    <section>
+      
+    </section>
     <!--
     <div id="centerDiv" class="fb-page" data-href="https://www.facebook.com/CrimsonCay17/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/CrimsonCay17/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/CrimsonCay17/">Crimson Cay</a><script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
